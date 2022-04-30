@@ -87,7 +87,6 @@ app.use(function (req, res, next) {
     res.status(HTTP_STATUS_NOT_FOUND);
 });
 
-
 /***** Closing server *****/
 process.on('SIGTERM', () => {
     server.close(() => {
