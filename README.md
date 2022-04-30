@@ -84,19 +84,26 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/
 ```
 
 #### Response body
 
 ```
-
+{"message":"Your API works! (200)"}
 ```
 
 #### Response headers
 
 ```
-
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 35
+ETag: W/"23-KNmhzXgQhtEE5ovS3fuLixylNK0"
+Date: Sat, 30 Apr 2022 17:23:27 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
 ```
 
 ### /app/flips/:number/ (GET)
@@ -104,19 +111,26 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/flips/5/
 ```
 
 #### Response body
 
 ```
-
+{"raw":["tails","heads","tails","heads","tails"],"summary":{"heads":2,"tails":3}}
 ```
 
 #### Response headers
 
 ```
-
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 39
+ETag: W/"27-6qGBVGEmI3KEo1nHPPx8vCAdrGc"
+Date: Sat, 30 Apr 2022 17:27:42 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
 ```
 
 ### /app/flip/coin/ (GET)
@@ -124,19 +138,26 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/flip/coin/
 ```
 
 #### Response body
 
 ```
-
+{"flip":"heads"}
 ```
 
 #### Response headers
 
 ```
-
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 16
+ETag: W/"10-N9e0DDykqBPnqphc8f4bzHcjsuM"
+Date: Sat, 30 Apr 2022 17:28:43 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
 ```
 
 ### /app/flip/call/:guess/ (GET)
@@ -144,18 +165,26 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/flip/call/tails/
 ```
 
 #### Response body
 
 ```
-
+{"call":"tails","flip":"heads","result":"lose"}
 ```
 
 #### Response headers
 
 ```
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 47
+ETag: W/"2f-JOa34pahI0LRWI9nHfi+YGLHNg8"
+Date: Sat, 30 Apr 2022 17:30:13 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
 
 ```
 
@@ -218,27 +247,7 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-
-```
-
-#### Response body
-
-```
-
-```
-
-#### Response headers
-
-```
-
-```
-
-### /app/log/access/ (GET)
-
-#### Request cURL
-
-```
-
+curl http://localhost:5000/app/log/access/
 ```
 
 #### Response body
@@ -260,7 +269,7 @@ _Not yet implemented_
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/error/
 ```
 
 #### Response body
