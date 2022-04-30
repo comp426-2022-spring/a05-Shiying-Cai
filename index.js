@@ -63,8 +63,6 @@ if (allArguments['log'] == true) {
     // Set up the access logging middleware
     app.use(morgan('combined', { stream: loggingStream }))
 }
-
-
 /***** API endpoints *****/
 // Check endpoint
 app.get('/app/', (req, res, next) => {
