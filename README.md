@@ -111,13 +111,13 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-curl http://localhost:5000/app/flip/
+curl http://localhost:5000/app/flips/5/
 ```
 
 #### Response body
 
 ```
-{"flip":"heads"}
+{"raw":["tails","heads","tails","heads","tails"],"summary":{"heads":2,"tails":3}}
 ```
 
 #### Response headers
@@ -126,9 +126,9 @@ curl http://localhost:5000/app/flip/
 HTTP/1.1 200 OK
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 35
-ETag: W/"23-KNmhzXgQhtEE5ovS3fuLixylNK0"
-Date: Sat, 30 Apr 2022 17:25:39 GMT
+Content-Length: 39
+ETag: W/"27-6qGBVGEmI3KEo1nHPPx8vCAdrGc"
+Date: Sat, 30 Apr 2022 17:27:42 GMT
 Connection: keep-alive
 Keep-Alive: timeout=5
 ```
