@@ -177,6 +177,14 @@ curl http://localhost:5000/app/flip/call/tails/
 #### Response headers
 
 ```
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 47
+ETag: W/"2f-JOa34pahI0LRWI9nHfi+YGLHNg8"
+Date: Sat, 30 Apr 2022 17:30:13 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
 
 ```
 
