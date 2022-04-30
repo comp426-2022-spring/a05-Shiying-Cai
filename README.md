@@ -84,13 +84,13 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/
 ```
 
 #### Response body
 
 ```
-
+{"message":"Your API works! (200)"}
 ```
 
 #### Response headers
