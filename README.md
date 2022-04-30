@@ -165,7 +165,7 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/flip/call/tails/
 ```
 
 #### Response body
