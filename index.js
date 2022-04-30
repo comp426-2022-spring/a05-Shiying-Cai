@@ -64,6 +64,7 @@ if (allArguments['log'] == true) {
     app.use(morgan('combined', { stream: loggingStream }))
 }
 
+
 /***** API endpoints *****/
 // Check endpoint
 app.get('/app/', (req, res, next) => {
