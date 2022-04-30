@@ -65,6 +65,10 @@ if (allArguments['log'] == true) {
 }
 
 
+
+
+
+
 /***** API endpoints *****/
 // Check endpoint
 app.get('/app/', (req, res, next) => {
